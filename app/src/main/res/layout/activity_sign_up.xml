@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/background_main">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="164dp"
+        android:drawableLeft="@drawable/baseline_face_24"
+        android:hint=" Name"
+
+        android:textColorHint="#0E4D80"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/twotone_perm_identity_24"
+        android:hint=" Enter email id"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#0E4D80"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:hint=" Make Password"
+        android:inputType="textPassword"
+        android:textColorHint="#0E4D80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="260dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no"
+
+        >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_format_list_bulleted_24"
+            android:text=" Select Gender"
+            android:textColor="#0E4D80"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#0E4D80"
+            android:textSize="15sp"
+            android:theme="@style/RadioButtonStyle"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Male"
+            android:theme="@style/RadioButtonStyle"
+            android:textColor="#0E4D80"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Others"
+            android:textColor="#0E4D80"
+            android:theme="@style/RadioButtonStyle"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="396dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/curved_box"
+
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/travel_logo" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="340dp"
+        android:drawableLeft="@drawable/round_home_24"
+        android:hint=" Address"
+
+        android:textColorHint="#0E4D80"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_call_24"
+
+        android:hint=" Enter Mobile number"
+        android:inputType="number"
+        android:textColorHint="#0E4D80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="I have agreed to the terms and conditions"
+        android:textColor="#0E4D80"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        android:theme="@style/RadioButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0B678A"
+        android:fontFamily="sans-serif-black"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

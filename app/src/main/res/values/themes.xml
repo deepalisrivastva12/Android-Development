@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TravellingApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+
+
+    </style>
+
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+
+        <item name="colorAccent">@android:color/holo_blue_dark</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Theme.TravellingApp" parent="Base.Theme.TravellingApp" />
+</resources>
